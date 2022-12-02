@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-cn">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="Wang jingzhou">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>资料来源</title>
+  <style>
+        body{
+            margin:0;
+        }
+        .up li{
+            margin: 0 8px;
+            list-style:none;
+            display:inline-block;
+            user-select:none;
+            font-size:15px;
+        }
+        .up{
+            display:flex;
+            justify-content: flex-end;
+            padding:0;
+            height:40px;
+            margin: 0;
+            background-color:RGB(255,255,223);
+            border-bottom:1px solid #ccc;
+            line-height:40px;
+        }
+        .up li:hover{
+            font-size:18px;
+            margin:0 4px;
+            color:RGB(87,119,220);
+        }
+        h1{
+            text-align:center;
+            margin-top:50px;
+        }
+        a{
+            color:RGB(64,149,214);
+        }
+  </style>
+ </head>
+ <body>
+  <ul class="up">
+        <li class="maker">返回</li>
+    </ul>
+    <h1>创意来源为：<a href="https://iafisher.com/">https://iafisher.com/</a></h1>
+    <script>
+    var makers = document.querySelector(".maker");
+    
+        makers.onclick = function(){
+            location.href = "main.html";
+        }
+    </script>
+ </body>
+</html>

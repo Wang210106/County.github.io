@@ -1,0 +1,168 @@
+            body {
+                margin: 0 auto;
+                font-family: Tahoma, Verdana, Arial, sans-serif;
+                overflow-x:hidden;
+            }
+            .cities{
+                transform:translateX(-20px);
+                width:150px;
+                max-width: 100%;
+            }
+            input, textarea, .select select {
+                line-height: 1.5;
+                margin: 0;
+                height: 2.1em;
+                padding: .3em .6em;
+                border: 1px solid #ccc;
+                background-color: #fff;
+                border-radius: .2em;
+                transition: all 0.3s;
+            }
+            input[type=button], input[type=submit], input[type=file], button { 
+                cursor: pointer; 
+                -webkit-appearance: none; 
+            }
+            h1 {
+                display: block;
+                font-size: 2em;
+                margin-block-start: 0.67em;
+                margin-block-end: 0.67em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+                font-weight: bold;
+                text-align: center;
+            }
+            .wrap{
+                position:relative;
+                height:80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                animation-duration: 0.2s;
+            }
+            .wrap input,.handin{
+                position:absolute;
+            }
+            .handin{
+                display: inline-block;
+                height:28px;
+                background-color:#ccc;
+                transform:translateX(100px);
+            }
+            .map{
+                margin-top:10px;
+                position:relative;
+                width:100%;
+                height:654px;
+                display: flex;
+                justify-content: center;
+            }
+            .amount{
+                font-size:15px;
+                font-family: "宋体";
+                font-weight: bold;
+                text-align: center;
+            }
+            .up li{
+                margin: 0 8px;
+                list-style:none;
+                display:inline-block;
+                user-select:none;
+                font-size:15px;
+            }
+            .up{
+                display:flex;
+                justify-content: flex-end;
+                padding:0;
+                height:40px;
+                margin: 0;
+                background-color:RGB(255,255,223);
+                border-bottom:1px solid #ccc;
+                line-height:40px;
+            }
+            .up li:hover{
+                font-size:18px;
+                margin:0 4px;
+                color:RGB(87,119,220);
+            }
+            .over{
+                margin-top:10px;
+                display:none;
+                justify-content: center;
+            }
+            .over div input{
+                border: 0;
+                color:#fff;
+                height:40px;
+                width:80px;
+                font-size:20px;
+            }
+            .complete{
+                background-color:RGB(38,120,220);
+            }
+            .again{
+                background-color:RGB(247,61,51);
+            }
+            .complete:hover{
+                background-color:RGB(68,146,227);
+            }
+            .again:hover{
+                background-color:RGB(247,101,92);
+            }
+            .controlScale,.retrans{
+                position:absolute;
+                margin-top: 10px;
+                transform:translateX(-450px);
+                width: 30px;
+                height: 48px;
+                background-color:#eee;
+                border:1px solid #ddd;
+                border-radius:5px;
+                color:#555;
+                text-align:center;
+            }
+            .retrans{
+                transform:translateX(-450px) translateY(60px);
+                cursor: pointer; 
+                -webkit-appearance: none; 
+                user-select: none;
+            }
+            .controlScale div{
+                height:24px;
+                cursor: pointer; 
+                -webkit-appearance: none; 
+                user-select: none;
+            }
+            .addScale{
+                border-bottom: 1px solid #ccc;
+            }
+            .Chinamap{
+                position:relative;
+                width:960px;
+                height:600px;
+                border:1px solid #CCC;
+                overflow:hidden;
+            }
+            .xianditu{
+                position:absolute;
+                background-image:url("img/map.jpg");
+                background-size: 100%;
+            }
+
+            @keyframes wrong{
+                0%{
+                    transform:translateX(0);
+                }
+                25%{
+                    transform:translateX(5px);
+                }
+                50%{
+                    transform:translateX(0);
+                }
+                75%{
+                    transform:translateX(5px);
+                }
+                100%{
+                    transform:translateX(0);
+                }
+            }

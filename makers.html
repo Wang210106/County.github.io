@@ -1,0 +1,84 @@
+﻿<!doctype html>
+<html lang="zh-cn">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="Wang jingzhou">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>创作团队</title>
+  <style src="reset.css"></style>
+  <style>
+        body{
+            margin:0;
+        }
+        .up li{
+            margin: 0 8px;
+            list-style:none;
+            display:inline-block;
+            user-select:none;
+            font-size:15px;
+        }
+        .up{
+            display:flex;
+            justify-content: flex-end;
+            padding:0;
+            height:40px;
+            margin: 0;
+            background-color:RGB(255,255,223);
+            border-bottom:1px solid #ccc;
+            line-height:40px;
+        }
+        .up li:hover{
+            font-size:18px;
+            margin:0 4px;
+            color:RGB(87,119,220);
+        }
+        .wrap div{
+            display:inline-block;
+            text-align:center;
+            width:300px;
+            height:500px;
+            border-radius:10px;
+            border: 1px solid #ccc;
+        }
+        .wrap div:hover{
+            transform:translateY(-30px);
+        }
+        .wrap{
+            display:flex;
+            justify-content: space-evenly;
+            margin:150px 0;
+        }
+        img{
+           margin-top:100px;
+            border-radius:50%;
+        }
+        p{
+            margin-top:100px;
+        }
+  </style>
+ </head>
+ <body>
+    <ul class="up">
+        <li class="maker">返回</li>
+    </ul>
+    <div class="wrap">
+        <div class="wang"><img src="Css/img/upimg.png" width="150" height="150"><p>Up主：金华金昌金城江</p></div>
+        <div class="uploader"><img src="Css/img/myimg.png" width="150" height="150"><p>Up主：起个名字重复nm</p></div>
+    </div>
+    <script>
+        var makers = document.querySelector(".maker");
+        var upload = document.querySelector(".uploader");
+        var wang = document.querySelector(".wang");
+        makers.onclick = function(){
+            location.href = "main.html";
+        }
+        upload.onclick = function(){
+            location.href = "https://space.bilibili.com/479967447";
+        }
+        wang.onclick = function(){
+            location.href = "https://space.bilibili.com/383306163";
+        }
+    </script>
+ </body>
+</html>
