@@ -1,4 +1,4 @@
-# County.github.io
+# CountyQuiz
 
 这是一个地理小游戏（
 是我与另一个地理爱好者开发的
