@@ -38,7 +38,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                animation-duration: 0.2s;
+                animation-duration: 0.5s;
             }
             .wrap input,.handin{
                 position:absolute;
